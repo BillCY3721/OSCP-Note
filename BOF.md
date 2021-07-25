@@ -96,7 +96,7 @@ time.sleep(1)
   - If bad characters only affect the next byte
     - !mona bytearray -b &quot; **\x00**&quot;
     - !mona compare -a esp -f bytearray.bin
-    - **/x00** , and the **1**** st **one, the** 3 ****rd** one, the **5**** th **one, … the** (n-1) ****th** one are actual bad characters
+    - **Typically, they are &#39;/x00&#39;** , and the **1**** st **one, the** 3 ****rd** one, the **5**** th **one, … the** (n-1) ****th** one are actual bad characters. But it is not always the case.
   - Assume bad characters are **\x00\x07\x2e\xa0**
 - **4: Find JMP ESP**
   - **Method 1 (PWK textbook)**
